@@ -1,1 +1,1 @@
-Shell Basics
+repository for shell basic commands
