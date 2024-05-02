@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Script displays content in current dir
+
+i=$(ls)
+for j in $i; do
+	echo "$j" | cut -d '-' -f2
+done
+
