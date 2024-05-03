@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Script that shows PIDs with grep c command
+
+ps -axu | grep bash
