@@ -2,7 +2,7 @@
 # configures a loadbalancer HAproxy
 
 apt-get -y update
-apt-get -y install haproxy=1.6.\*
+apt-get -y install haproxy
 
 echo '
 frontend RahilBux.tech
