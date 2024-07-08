@@ -16,7 +16,7 @@ echo "Hello World!" > /var/www/html/index.html
 FIND=$(grep "redirect_me" /etc/nginx/sites-available/default)
 STR="\\\n\tlocation /redirect_me {\n\t\t return 301 https://www.youtube.com/watch?v=3MbaGJN2ioQ;\n\t}\n"
 if [[ -z $FIND ]]; then
-	sed -i "42i $STR" /etc/nginx/sites-availabe/default
+	sed -i "42i $STR" /etc/nginx/sites-available/default
 fi
 
 FIND=$(grep "error_page 404" /etc/nginx/sites-available/default)
