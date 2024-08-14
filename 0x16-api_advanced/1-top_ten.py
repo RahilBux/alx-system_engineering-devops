@@ -1,15 +1,13 @@
 #!/usr/bin/python3
 """
-queries the Reddit API and prints the titles of
-the first 10 hot posts listed for a given subreddit.
+queries the Reddit API
 """
 import requests
 
 
 def top_ten(subreddit):
     """
-    prints the titles of the first 10 hot posts listed for
-    a given subreddit
+    prints the titles
     """
     url = ("https://api.reddit.com/r/{}?sort=hot&limit=10".format(subreddit))
     headers = {'User-Agent': 'CustomClient/1.0'}
